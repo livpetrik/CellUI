@@ -19,15 +19,20 @@ public class QuestionDisplay : MonoBehaviour
 
     void Start()
     {
-        screenQuestion.GetComponent<TMPro.TextMeshProUGUI>().text = newQuestion; 
-        answerA.GetComponent<TMPro.TextMeshProUGUI>().text = newA;
-        answerB.GetComponent<TMPro.TextMeshProUGUI>().text = newB;
-        answerC.GetComponent<TMPro.TextMeshProUGUI>().text = newC;
-        answerD.GetComponent<TMPro.TextMeshProUGUI>().text = newD;
+        StartCoroutine(PushTextOnScreen());
     }
 
     void Update()
     {
         
+    }
+    IEnumerator PushTextOnScreen()
+    {
+        yield return new WaitForSeconds(0.25f); // decimal has to have f after
+        screenQuestion.GetComponent<TMPro.TextMeshProUGUI>().text = newQuestion; 
+        answerA.GetComponent<TMPro.TextMeshProUGUI>().text = newA;
+        answerB.GetComponent<TMPro.TextMeshProUGUI>().text = newB;
+        answerC.GetComponent<TMPro.TextMeshProUGUI>().text = newC;
+        answerD.GetComponent<TMPro.TextMeshProUGUI>().text = newD;
     }
 }
