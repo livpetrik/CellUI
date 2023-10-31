@@ -6,11 +6,16 @@ using UnityEngine.UI;
 
 public class QuestionDisplay : MonoBehaviour
 {
-    public GameObject screenQuestion; // question text
+    public GameObject screenQuestion;
     public GameObject answerA;
     public GameObject answerB;
     public GameObject answerC;
     public GameObject answerD;
+    public static string newQuestion;
+    public static string newA;
+    public static string newB;
+    public static string newC;
+    public static string newD;
 
     void Start()
     {
