@@ -14,7 +14,7 @@ public class QuestionDisplay : MonoBehaviour
 
     void Start()
     {
-        screenQuestion.GetComponent<Text>().text = "What is produced in the mitochondria?"; // this line is where i get NullReferenceException errors 
+        screenQuestion.GetComponent<TMPro.TextMeshProUGUI>().text = "What is produced in the mitochondria?"; 
         answerA.GetComponent<Text>().text = "Ribosomes";
         answerB.GetComponent<Text>().text = "ATP";
         answerC.GetComponent<Text>().text = "Daughter Cells";
