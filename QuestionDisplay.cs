@@ -19,10 +19,11 @@ public class QuestionDisplay : MonoBehaviour
 
     void Start()
     {
-        screenQuestion.GetComponent<TMPro.TextMeshProUGUI>().text = "What is produced in the mitochondria?"; 
-        answerA.GetComponent<Text>().text = "Ribosomes";
-        answerB.GetComponent<Text>().text = "ATP";
-        answerC.GetComponent<Text>().text = "Daughter Cells";
+        screenQuestion.GetComponent<TMPro.TextMeshProUGUI>().text = newQuestion; 
+        answerA.GetComponent<TMPro.TextMeshProUGUI>().text = newA;
+        answerB.GetComponent<TMPro.TextMeshProUGUI>().text = newB;
+        answerC.GetComponent<TMPro.TextMeshProUGUI>().text = newC;
+        answerD.GetComponent<TMPro.TextMeshProUGUI>().text = newD;
     }
 
     void Update()
